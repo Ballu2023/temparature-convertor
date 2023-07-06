@@ -1,0 +1,48 @@
+<!docktype html>
+<html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>this is my website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<h1>temparature convertor</h1>
+<div id="integer">
+    <div class="input-div">
+        <label>celcious</label><br>
+<input type="number" id="cel" value="0" class="int">
+    </div>
+    <div class="input-div">
+        <label>fehrinate</label><br>
+<input type="number" id="feh" value="0" class="int">
+    </div>
+    </div>
+        
+        <script>
+        var cel = document.getElementById("cel")
+        var feh = document.getElementById("feh")
+      
+    cel.addEventListener("input", function(){
+    var c = this.value;
+    var f = (c * 9/5) + 32
+    
+    
+    feh.value = f;
+    })
+    
+     feh.addEventListener("input", function(){
+    var f = this.value;
+    var c = (f - 32) * 5/9
+    
+    
+    cel.value = c;
+    })
+        
+        </script>
+        
+        
+        
+</body>
+    </html>
+</html>
